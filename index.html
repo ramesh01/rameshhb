@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html amp>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta name="description" content="Personal portfolio" />
 	<meta name="author" content="Ramesha HB" />
 	<meta name="keywords" content="Ramesh, Front-end developer, developer, programmer" />
 	<meta name="theme-color" content="#222" />
 	<title>Ramesh H B | Fron-end Developer | rameshhb37@gmail.com</title>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<link rel="canonical" href="https://ampbyexample.com/introduction/hello_world/">
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -21,21 +91,46 @@
 					<li><a href="#">Ramesh H B</a></li>
 				</ul>
 			</div>
+			<div class="navbar--menu">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Porfolio</a></li>
+				</ul>
+			</div>
 			<div class="navbar--right">
 				<ul>
 					<li class="icon">
-						<a class="icon-linkedin" href="www.linkedin.com/in/ramesh-hb" target="_blank">
-							<img class="icon--img" src="./assets/gmail.svg" />
+						<a class="icon-linkedin" href="mailto:rameshhb37@gmail.com" target="_blank"
+							title="Send me an email">
+							<amp-img class="icon--img" src="./assets/gmail.svg" width="100px" height="100px"
+								layout="responsive"></amp-img>
 						</a></li>
 					<li class="icon">
-						<a class="icon-email" href="mailto:rameshhb37@gmail.com" target="_blank">
-							<img class="icon--img" src="./assets/linkedin.svg" />
+						<a class="icon-email" href="www.linkedin.com/in/ramesh-hb" target="_blank"
+							title="Checkout my profile">
+							<amp-img class="icon--img" src="./assets/linkedin.svg" width="100px" height="100px"
+								layout="responsive"></amp-img>
 						</a></li>
 				</ul>
 			</div>
 
 		</nav>
 	</header>
+	<main>
+		<div class="container">
+			<div class="user--brief">
+				<div class="">Hello,</div>
+				<div class=""><span> I'm Ramesh H B,</p>
+						I'm a Front-end developer</span></div>
+			</div>
+		</div>
+		<div id="about">
+			<h3>about</h3>
+		</div>
+		<div id="portfolio">
+			<h3>portfolio</h3>
+		</div>
+	</main>
 </body>
 
 </html>

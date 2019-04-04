@@ -23,6 +23,7 @@ nav ul {
     margin: 0;
     padding: 10px 15px;
     color: #FFF;
+    width: 100%;
 }
 
 nav a {
@@ -33,14 +34,27 @@ nav a {
 .navbar--right {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.navbar--menu {
     margin-left: auto;
-    width: 35%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar--menu li {
+    display: inline-block;
+    width: 40%;
+    font-size: 20px;
+    margin-right: 8px;
 }
 
 .icon {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     margin-right: 8px;
 }
 
@@ -53,8 +67,91 @@ nav a {
     height: 100%;
 }
 
+.user--brief {
+    padding: 100px;
+    text-align: center;
+}
+
+.user--brief p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 355px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
 @media (min-width: 768px) {
+    .icon {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+
     .navbar--right {
+        width: 20%;
+    }
+
+    .navbar--menu {
         width: 20%;
     }
 }
