@@ -13,17 +13,18 @@ body * {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #7b7bf5;
+    padding: 10px 0;
 }
 
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 15px;
+    padding: 10px 8px;
     color: #FFF;
-    width: 100%;
 }
 
 nav a {
@@ -39,16 +40,19 @@ nav a {
 
 .navbar--menu {
     margin-left: auto;
-    width: 40%;
+    width: 75%;
     display: flex;
     align-items: center;
 }
 
+.navbar--menu ul {
+    width: 100%;
+    text-align: right;
+}
+
 .navbar--menu li {
     display: inline-block;
-    width: 40%;
-    font-size: 20px;
-    margin-right: 8px;
+    font-size: 16px;
 }
 
 .icon {
@@ -67,15 +71,43 @@ nav a {
     height: 100%;
 }
 
-.user--brief {
+.welcome--note {
     padding: 100px;
     text-align: center;
 }
 
-.user--brief p {
+.welcome--note p {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.icon--underline {
+    position: relative;
+}
+
+.icon--underline:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.icon--underline:hover:before,
+.icon--underline:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar--menu ul li {
+    padding: 0 2px;
 }
 
 @keyframes showup {
@@ -152,6 +184,10 @@ nav a {
     }
 
     .navbar--menu {
-        width: 20%;
+        width: 25%;
+    }
+
+    .navbar--menu ul li {
+        padding: 0 15px;
     }
 }
