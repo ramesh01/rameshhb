@@ -5,8 +5,9 @@ body {
 }
 
 body * {
-    font-family: sans-serif,
-        serif;
+    font-family: Raleway;
+    font-style: normal;
+    font-variant: normal;
 }
 
 .navbar {
@@ -32,6 +33,10 @@ nav a {
     color: inherit;
 }
 
+.navbar--left {
+    font-weight: 600;
+}
+
 .navbar--right {
     display: flex;
     justify-content: center;
@@ -45,8 +50,12 @@ nav a {
     align-items: center;
 }
 
+.navbar--left ul,
 .navbar--menu ul {
     width: 100%;
+}
+
+.navbar--menu ul {
     text-align: right;
 }
 
@@ -72,8 +81,11 @@ nav a {
 }
 
 .welcome--note {
-    padding: 100px;
+    padding: 85px;
     text-align: center;
+    height: 75px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .welcome--note p {
@@ -158,7 +170,7 @@ nav a {
     }
 
     30% {
-        width: 355px;
+        width: 100%;
     }
 
     80% {
@@ -167,8 +179,22 @@ nav a {
 
     100% {
         opacity: 0;
-        width: 355px;
+        width: 100%;
     }
+}
+
+.welcome--note__hello {
+    margin-bottom: 10px;
+    animation: showup 5s infinite;
+}
+
+.welcome--note__des span {
+    animation: slidein 5s infinite;
+}
+
+.welcome--note__des {
+    width: 0px;
+    animation: reveal 5s infinite;
 }
 
 @media (min-width: 768px) {
@@ -189,5 +215,13 @@ nav a {
 
     .navbar--menu ul li {
         padding: 0 15px;
+    }
+
+    .welcome--note {
+        padding: 100px;
+        text-align: center;
+        height: 75px;
+        font-weight: 600;
+        font-size: 20px;
     }
 }
