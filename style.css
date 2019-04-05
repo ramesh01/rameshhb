@@ -21,7 +21,8 @@ body * {
 }
 
 
-nav ul {
+nav ul,
+.contact-me--list {
     list-style-type: none;
     margin: 0;
     padding: 10px 8px;
@@ -185,17 +186,62 @@ nav a {
 
 .welcome--note__hello {
     margin-bottom: 10px;
-    animation: showup 5s infinite;
+    animation: showup 7s infinite;
 }
 
 .welcome--note__des span {
-    animation: slidein 5s infinite;
+    animation: slidein 7s infinite;
 }
 
 .welcome--note__des {
     width: 0px;
-    animation: reveal 5s infinite;
+    animation: reveal 7s infinite;
 }
+
+.contact-me--list {
+    text-align: center;
+}
+
+.contact-me--list li {
+    display: inline-block;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    animation: zoomIn 1.5s infinite;
+}
+
+
 
 @media (min-width: 768px) {
     .icon {
