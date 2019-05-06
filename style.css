@@ -1,273 +1,55 @@
 html,
 body {
-    background-color: #f5f5f5;
-    margin: 0;
+  background-color: #f5f5f5;
+  margin: 0;
 }
 
-body * {
-    font-family: Raleway;
-    font-style: normal;
-    font-variant: normal;
+body,
+* {
+  font-style: normal;
+  font-variant: normal;
+  box-sizing: border-box;
+  font-family: Muli;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #7b7bf5;
-    padding: 10px 0;
+::selection {
+  background-color: #FFF;
+  color: #222;
 }
 
-
-nav ul,
-.contact-me--list {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 8px;
-    color: #FFF;
+.container {
+  max-width: 1055px;
+  margin: auto;
+  padding: 15px 20px;
+  background-color: #FFF;
+  box-shadow: 1px 0px 5px #dddddd78;
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
+div#bio p {
+  font-size: 25px;
+  font-weight: 600;
 }
 
-.navbar--left {
-    font-weight: 600;
+.contact-info {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar--right {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.resume-label {
+  font-weight: 700;
+  margin: 5px;
 }
 
-.navbar--menu {
-    margin-left: auto;
-    width: 75%;
-    display: flex;
-    align-items: center;
+.resume-info {
+  color: red;
 }
 
-.navbar--left ul,
-.navbar--menu ul {
-    width: 100%;
-}
-
-.navbar--menu ul {
-    text-align: right;
-}
-
-.navbar--menu li {
-    display: inline-block;
-    font-size: 16px;
-}
-
-.icon {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-}
-
-.icon a {
-    cursor: pointer;
-}
-
-.icon--img {
-    width: 100%;
-    height: 100%;
-}
-
-.welcome--note {
-    padding: 85px;
-    text-align: center;
-    height: 75px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.welcome--note p {
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.icon--underline {
-    position: relative;
-}
-
-.icon--underline:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: #FFF;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .25s linear;
-}
-
-.icon--underline:hover:before,
-.icon--underline:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.navbar--menu ul li {
-    padding: 0 2px;
-}
-
-@keyframes showup {
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
-
-    20% {
-        margin-left: -800px;
-    }
-
-    35% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: 0px;
-    }
-}
-
-@keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
-
-    20% {
-        opacity: 1;
-        width: 0px;
-    }
-
-    30% {
-        width: 100%;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        width: 100%;
-    }
-}
-
-.welcome--note__hello {
-    margin-bottom: 10px;
-    animation: showup 7s infinite;
-}
-
-.welcome--note__des span {
-    animation: slidein 7s infinite;
-}
-
-.welcome--note__des {
-    width: 0px;
-    animation: reveal 7s infinite;
-}
-
-.contact-me--list {
-    text-align: center;
-}
-
-.contact-me--list li {
-    display: inline-block;
-    margin-right: 10px;
-    width: 35px;
-    height: 35px;
-}
-
-.text-align--center {
-    text-align: center;
-}
-
-@-webkit-keyframes zoomIn {
-    from {
-        opacity: 0;
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-.zoomIn {
-    animation: zoomIn 1.5s infinite;
-}
-
-
-
-@media (min-width: 768px) {
-    .icon {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        margin-right: 8px;
-    }
-
-    .navbar--right {
-        width: 20%;
-    }
-
-    .navbar--menu {
-        width: 25%;
-    }
-
-    .navbar--menu ul li {
-        padding: 0 15px;
-    }
-
-    .welcome--note {
-        padding: 100px;
-        text-align: center;
-        height: 75px;
-        font-weight: 600;
-        font-size: 20px;
-    }
+.section-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: red;
 }
