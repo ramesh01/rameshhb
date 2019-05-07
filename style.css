@@ -23,6 +23,9 @@ body,
   padding: 15px 20px;
   background-color: #FFF;
   box-shadow: 1px 0px 5px #dddddd78;
+  margin-top: 5px;
+  border-top: 3px solid red;
+  border-radius: 4px;
 }
 
 div#bio p {
@@ -51,5 +54,35 @@ div#bio p {
 .section-label {
   text-transform: uppercase;
   font-weight: 700;
+  color: red;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic-container {
+  width: 60px;
+  height: 60px;
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-info {
+  margin-left: 10px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resume-link {
+  text-decoration: none;
   color: red;
 }
