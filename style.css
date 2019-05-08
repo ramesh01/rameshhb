@@ -175,6 +175,14 @@ p {
   font-size: 12px;
 }
 
+.sidebar-wrapper .role {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -193,11 +201,6 @@ p {
   font-size: 22px;
   margin-top: 5px;
   line-height: 20px;
-}
-
-.role {
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 .profile-pic {
