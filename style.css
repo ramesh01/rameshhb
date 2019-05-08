@@ -5,6 +5,14 @@ body {
   font-size: 14px;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-display: auto;
+  src: local('Roboto'),
+    local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+}
+
 body,
 * {
   font-style: normal;
