@@ -51,7 +51,7 @@ p {
 
 .wrapper {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .main-wrapper {
@@ -163,7 +163,7 @@ p {
 
 .profile-container,
 .container-block {
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 .profile-container {
@@ -172,15 +172,16 @@ p {
 }
 
 .sidebar-wrapper .svg-inline--fa {
-  height: 13px;
-  width: 13px;
-  vertical-align: middle;
+  height: 15px;
+  width: 15px;
   margin: 5px;
 }
 
 .sidebar-wrapper .contact-list li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
   margin-bottom: 15px;
-  font-size: 12px;
 }
 
 .sidebar-wrapper .role {
@@ -207,12 +208,13 @@ p {
   color: #FFF;
   word-break: break-word;
   font-size: 22px;
-  margin-top: 5px;
+  margin-top: 15px;
   line-height: 20px;
 }
 
 .profile-pic {
   border-radius: 60px;
+  filter: grayscale(100);
 }
 
 .container-block-title {
@@ -229,7 +231,7 @@ p {
 
 
 .skillset .level-bar {
-  height: 12px;
+  height: 10px;
   background: #f5f5f5;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -242,9 +244,9 @@ p {
 }
 
 .skillset .level-title {
+  width: 40%;
   display: inline-block;
   float: left;
-  width: 30%;
   margin-bottom: 0;
   font-size: 14px;
   margin-top: 0;
@@ -267,7 +269,6 @@ p {
 }
 
 .progress {
-  display: -ms-flexbox;
   display: flex;
   height: 1rem;
   overflow: hidden;
@@ -280,6 +281,10 @@ p {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+.interests-list .item {
+  margin-bottom: 10px;
 }
 
 .sidebar-wrapper .education-container .meta {
@@ -312,5 +317,9 @@ p {
 
   .main-wrapper {
     padding: 60px;
+  }
+
+  .sidebar-wrapper .contact-list li {
+    font-size: 12px;
   }
 }
