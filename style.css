@@ -10,7 +10,7 @@ body {
   font-display: auto;
   src: local('Roboto'),
     local('Roboto-Regular'),
-    url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+    url('https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKOzY.woff2') format('woff2');
 }
 
 body,
@@ -23,8 +23,8 @@ body,
 }
 
 ::selection {
-  background-color: #FFF;
-  color: #222;
+  background-color: #42A8C0;
+  color: #FFF;
 }
 
 p {
