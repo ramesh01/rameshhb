@@ -92,11 +92,7 @@
       </style>
     </noscript>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
+    <script src="app.js"></script>
   </head>
   <body>
     <div class="progress-container">
@@ -564,21 +560,5 @@
         </div>
       </div>
     </main>
-    <script type="">
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {
-        myFunction();
-      };
-
-      function myFunction() {
-        var winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        var height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("pro-bar").style.width = scrolled + "%";
-      }
-    </script>
   </body>
 </html>
