@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #f5f5f5;
+  background-color: #41869a21;
   margin: 0;
   font-size: 14px;
 }
@@ -28,7 +28,7 @@ body,
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .container {
@@ -36,7 +36,6 @@ p {
   margin: 0 auto;
   margin-top: 0px;
   background-color: #FFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -52,6 +51,7 @@ p {
 .wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .main-wrapper {
@@ -60,22 +60,31 @@ p {
 
 .sidebar-wrapper {
   background-color: #42A8C0;
-  width: 100%;
   color: #fff;
+  position: relative;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+	.sidebar-wrapper {
+	  position: fixed;
+	  width: 22%;
+	  height: 100%;
+	}
+}
 .main-wrapper .section-title {
-  text-transform: uppercase;
-  font-size: 20px;
+  position: relative;
+  font-size: 18px;
   font-weight: 500;
   color: #2d7788;
-  position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .svg-inline--fa.fa-w-14 {
@@ -93,7 +102,7 @@ p {
 
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color: #52a8c1;
 }
 
 .main-wrapper .project-title {
@@ -118,8 +127,8 @@ p {
 
 
 .main-wrapper .job-title {
-  color: #3F4650;
-  font-size: 16px;
+  color: #000;
+  font-size: 15px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
@@ -163,12 +172,12 @@ p {
 
 .profile-container,
 .container-block {
-  padding: 15px 30px;
+  padding: 15px;
 }
 
 .profile-container {
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: #00000033;
 }
 
 .sidebar-wrapper .svg-inline--fa {
@@ -181,12 +190,12 @@ p {
   display: flex;
   align-items: center;
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .sidebar-wrapper .role {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  color: #ffffff99;
+  font-size: 14px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -199,22 +208,23 @@ p {
 }
 
 .profile-pic-container {
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   margin: auto;
 }
 
 .name {
   color: #FFF;
   word-break: break-word;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 15px;
   line-height: 20px;
 }
 
 .profile-pic {
-  border-radius: 60px;
+  border-radius: 50%;
   filter: grayscale(100);
+  border: 2px solid #fff;
 }
 
 .container-block-title {
@@ -323,6 +333,10 @@ p {
   width: 0%;
 }
 
+.progress-bar.theme-progress-bar{
+  height: 10px;
+}
+
 @media only screen and (min-width : 768px) {
   .wrapper {
     display: flex;
@@ -330,7 +344,9 @@ p {
   }
 
   .main-wrapper {
-    padding: 60px;
+    padding: 40px;
+    width: 78%;
+    margin-left: 30%;
   }
 
   .sidebar-wrapper .contact-list li {
