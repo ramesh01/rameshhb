@@ -13,6 +13,7 @@ h6 {
   overflow: hidden;
   position: relative;
   width: 100%;
+  border-top: 8px solid #793aff;
 }
 
 .container {
@@ -127,13 +128,13 @@ ul {
 
 .skill-info {
   font-size: 1.6rem;
-  font-weight: 500;
-  color: #000739;
+  font-weight: 600;
+  color: #fff;
   border: 1px solid #793aff;
   padding: 4px;
   border-radius: 4px;
   text-align: center;
-  background-color: #fff;
+  background-color: #793aff;
 }
 
 .title {
