@@ -191,3 +191,14 @@ ul {
 .footer {
   padding: 8rem 0 2rem;
 }
+
+@media only screen and (max-width: 780px) {
+  .row.skill__section {
+    flex-direction: row;
+  }
+  .column-20 {
+    padding: 0 0.5rem;
+    max-width: 33% !important;
+    flex: 0 0 33% !important;
+  }
+}
