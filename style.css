@@ -14,6 +14,8 @@ h6 {
   position: relative;
   width: 100%;
   border-top: 8px solid #0699ce;
+  background-image: radial-gradient(#0099cd 5%, transparent 0);
+  background-size: 15px 15px;
 }
 
 .container {
