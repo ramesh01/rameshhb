@@ -8,10 +8,6 @@ h6 {
   margin-top: 0;
 }
 
-body {
-  background-color: #fafafa;
-}
-
 .wrapper {
   display: block;
   overflow: hidden;
@@ -31,6 +27,7 @@ body {
 }
 
 body {
+  background-color: #fafafa;
   font-family: Mija, -apple-system, Arial, BlinkMacSystemFont, roboto slab,
     droid serif, segoe ui, Ubuntu, Cantarell, Georgia, serif;
 }
@@ -137,7 +134,7 @@ ul {
 
 .skill-info {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #3f3f46;
   border: 1px solid #ebebeb;
   padding: 4px 10px;
