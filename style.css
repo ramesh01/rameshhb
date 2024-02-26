@@ -8,19 +8,26 @@ h6 {
   margin-top: 0;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .wrapper {
   display: block;
   overflow: hidden;
   position: relative;
   width: 100%;
-  border-top: 8px solid #0699ce;
-  background-image: radial-gradient(#0099cd 5%, transparent 0);
+  border-top: 8px solid #3f3f46;
+  background-image: radial-gradient(#000 5%, transparent 0);
   background-size: 15px 15px;
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
+  background-color: #ffffff;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 body {
@@ -31,43 +38,43 @@ body {
 .title {
   font-size: 2rem;
   font-weight: 600;
-  color: #0699ce;
+  color: #3f3f46;
   letter-spacing: 0;
 }
 
 .title__sub {
   font-size: 1.8rem;
   font-weight: 400;
-  color: #0699ce;
+  color: #3f3f46;
   letter-spacing: 0;
   margin-bottom: 56px;
 }
 
 .title__link {
-  color: #0699ce;
-  font-weight: 500;
+  color: #3f3f46;
+  font-weight: 600;
   font-size: 1.8rem;
   letter-spacing: 0;
   margin-bottom: 0.8rem;
 }
 
 .title__section {
-  color: #0699ce;
-  font-weight: 500;
+  color: #3f3f46;
+  font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 0;
 }
 
 .title__experience {
   font-size: 1.6rem;
-  font-weight: 500;
-  color: #0699ce;
+  font-weight: 600;
+  color: #3f3f46;
   margin-bottom: 8px;
 }
 
 .title__experience--duration {
   font-size: 1.4rem;
-  color: #9e9ca3;
+  color: #52525b;
   margin-bottom: 8px;
 }
 
@@ -94,12 +101,12 @@ body {
 }
 
 a {
-  color: #0699ce;
+  color: #3f3f46;
   text-decoration: none;
 }
 
 .link__contact {
-  color: #0699ce;
+  color: #3f3f46;
   transition: 0.2s ease-in-out;
 }
 
@@ -109,12 +116,12 @@ a {
 
 ::-moz-selection {
   color: #fff;
-  background: #0699ce;
+  background: #3f3f46;
 }
 
 ::selection {
   color: #fff;
-  background: #0699ce;
+  background: #3f3f46;
 }
 
 @media only screen and (max-width: 600px) {
@@ -131,25 +138,25 @@ ul {
 .skill-info {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #fff;
-  border: 1px solid #0699ce;
-  padding: 4px;
-  border-radius: 4px;
+  color: #3f3f46;
+  border: 1px solid #ebebeb;
+  padding: 4px 10px;
+  border-radius: 50px;
   text-align: center;
-  background-color: #0699ce;
+  background-color: #fafafa;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 600;
-  color: #0699ce;
+  color: #3f3f46;
   letter-spacing: 0;
 }
 
 .title__sub {
   font-size: 1.8rem;
   font-weight: 300;
-  color: #0699ce;
+  color: #3f3f46;
   letter-spacing: 0;
   margin-bottom: 56px;
 }
@@ -163,27 +170,12 @@ ul {
   padding-top: 1.6rem !important;
 }
 
-.title__section {
-  color: #0699ce;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0;
-}
-
 .column__information {
   margin-bottom: 24px !important;
 }
 
-.title__link {
-  color: #0699ce;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0;
-  margin-bottom: 0.8rem;
-}
-
 .link__contact {
-  color: #0699ce;
+  color: #3f3f46;
   transition: 0.2s ease-in-out;
 }
 
@@ -192,6 +184,11 @@ ul {
 }
 .footer {
   padding: 8rem 0 2rem;
+}
+
+.row .column.column-15 {
+  flex: 0 0 15%;
+  max-width: 15%;
 }
 
 @media only screen and (max-width: 780px) {
